@@ -1,0 +1,56 @@
+$colors: (primary: #f04e4e, primary-light: lighten(#f04e4e, 40%), primary-dark: darken(#f04e4e, 40%), accent: #fcdada);
+$viewports: (Mobile_SM: 325px, Mobile_M: 375px, Mobile_L: 425px, Tablet: 768px, Laptop: 1024px, Laptop_L: 1440px, Laptop_QHD: 2560px);
+
+// Returns viewport size from viewports list
+@function viewport($size) {
+  @return map-get($viewports, $size);
+}
+
+// Returns color from colors list
+@function color($color-name) {
+  @return map-get($colors, $color-name);
+}
+
+/* Viewport Mixins */
+
+@mixin mobile_small {
+  @media (max-width: #{viewport(Mobile_M)}) {
+    @content;
+  }
+}
+
+@mixin mobile_medium {
+  @media (min-width: #{viewport(Mobile_M)}) and (max-width: #{viewport(Mobile_L)}) {
+    @content;
+  }
+}
+
+@mixin mobile_large {
+  @media (min-width: #{viewport(Mobile_L)}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{viewport(Tablet)}) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media (min-width: #{viewport(Laptop)}) {
+    @content;
+  }
+}
+
+@mixin laptop_large {
+  @media (min-width: #{viewport(Laptop_L)}) {
+    @content;
+  }
+}
+
+@mixin laptop_qhd {
+  @media (min-width: #{viewport(Laptop_QHD)}) {
+    @content;
+  }
+}
