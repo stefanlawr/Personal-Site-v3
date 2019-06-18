@@ -10,6 +10,7 @@ dist/
 # OS or Editor folders
 .DS_Store
 .cache
+
 # .vscode
 /.idea
 .project
