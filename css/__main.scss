@@ -53,7 +53,14 @@ nav {
       a {
         text-decoration: none;
         color: black;
+        transition: all .2s ease-in-out;
       }
+
+      a:hover {
+        transform: scale(1.1);
+        color: pink;
+      }
+
     }
   }
 }
@@ -64,6 +71,8 @@ section {
 }
 
 section#home {
+
+
   figure {
     height: 100%;
     display: flex;
@@ -71,6 +80,12 @@ section#home {
     margin: 0 0 0 5rem;
 
     h1 {
+      @include mobile_small {
+        margin: 0 4rem 0 0;
+        text-align: center;
+        font-size: 2rem;
+      }
+
       @include mobile_medium {
         margin: 0 4rem 0 0;
         text-align: center;
@@ -78,6 +93,7 @@ section#home {
       }
 
       @include tablet {
+        margin: 0 0 0 1rem;
         font-size: 3.3rem;
         font-weight: 900;
       }
@@ -91,6 +107,12 @@ section#home {
     }
 
     h2 {
+      @include mobile_small {
+        margin: 0 4rem 0 0;
+        text-align: center;
+        font-size: 1rem;
+      }
+
       @include mobile_medium {
         margin: .5rem 4rem 0 0;
         text-align: center;
@@ -98,6 +120,7 @@ section#home {
       }
 
       @include tablet {
+        margin: 0 0 0 1.3rem;
         font-size: 1.5rem;
         font-weight: 900;
       }
@@ -110,6 +133,11 @@ section#home {
     }
 
     img {
+      @include mobile_small {
+        display: none;
+        margin: 0;
+      }
+
       @include mobile_medium {
         display: none;
         margin: 0;
