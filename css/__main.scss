@@ -1,5 +1,5 @@
-@import "./_utilities";
-@import "./_animations";
+@import './_utilities';
+@import './_animations';
 
 body,
 html {
@@ -8,8 +8,8 @@ html {
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
-  display: grid;
+  font-family: 'Montserrat', sans-serif;
+  // display: grid;
   margin: 0;
 
   #background {
@@ -24,8 +24,10 @@ body {
 
 nav {
   position: fixed;
-  width: 100%;
   display: flex;
+  width: 100%;
+  top: 0;
+  left: 0;
   justify-content: left;
   background-color: white;
   border-bottom: 0.025rem solid #dfdfdf;
@@ -54,7 +56,7 @@ nav {
       a {
         text-decoration: none;
         color: black;
-        transition: all .2s ease-in-out;
+        transition: all 0.2s ease-in-out;
         user-select: none;
       }
 
@@ -62,7 +64,6 @@ nav {
         transform: scale(1.1);
         color: pink;
       }
-
     }
   }
 }
@@ -73,8 +74,6 @@ section {
 }
 
 section#home {
-
-
   figure {
     height: 100%;
     display: flex;
@@ -114,8 +113,7 @@ section#home {
       font-weight: 900;
       margin: 0;
       text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.3),
-      0px 8px 13px rgba(0, 0, 0, 0.1),
-      0px 18px 23px rgba(0, 0, 0, 0.1);
+        0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
     }
 
     h2 {
@@ -149,7 +147,7 @@ section#home {
     img {
       @include mobile_small {
         width: 40%;
-        margin-right: .5rem;
+        margin-right: 0.5rem;
       }
 
       @include mobile_medium {
@@ -161,8 +159,7 @@ section#home {
       border-radius: 50%;
       width: 25%;
       display: flex;
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
-      0 6px 6px rgba(0, 0, 0, 0.23);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
       animation-name: fadeInDown;
       animation-duration: 1.25s;
     }
@@ -175,7 +172,6 @@ section#about {
     justify-content: center;
 
     h1 {
-
       text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.15);
       text-align: center;
 
@@ -183,21 +179,21 @@ section#about {
         margin-top: 2.5rem;
         font-size: 2rem;
         width: 60%;
-        border-bottom: .35rem solid pink;
+        border-bottom: 0.35rem solid pink;
       }
 
       @include mobile_medium {
         margin-top: 3rem;
         font-size: 3rem;
         width: 65%;
-        border-bottom: .5rem solid pink;
+        border-bottom: 0.5rem solid pink;
       }
 
       @include tablet {
         margin-top: 4rem;
         font-size: 3.5rem;
         width: 45%;
-        border-bottom: .8rem solid pink;
+        border-bottom: 0.8rem solid pink;
       }
 
       @include laptop {
