@@ -5,7 +5,6 @@
 node_modules/
 .tmp/
 build/
-dist/
 
 # OS or Editor folders
 .DS_Store
