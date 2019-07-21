@@ -26,6 +26,5 @@ tempCodeRunnerFile.*
 *.txt
 *.log
 *.*-log
-yarn.lock
 shrinkwrap.yaml
 package-lock.json
