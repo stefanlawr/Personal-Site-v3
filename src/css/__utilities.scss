@@ -1,5 +1,19 @@
-$colors: (primary: #f04e4e, primary-light: lighten(#f04e4e, 40%), primary-dark: darken(#f04e4e, 40%), accent: #fcdada);
-$viewports: (Mobile_SM: 325px, Mobile_M: 375px, Mobile_L: 425px, Tablet: 823px, Laptop: 1024px, Laptop_L: 1440px, Laptop_QHD: 2560px);
+$colors: (
+  primary: #f04e4e,
+  primary-light: lighten(#f04e4e, 40%),
+  primary-dark: darken(#f04e4e, 40%),
+  accent: #fcdada,
+);
+
+$viewports: (
+  Mobile_SM: 325px,
+  Mobile_M: 375px,
+  Mobile_L: 425px,
+  Tablet: 823px,
+  Laptop: 1024px,
+  Laptop_L: 1440px,
+  Laptop_QHD: 2560px,
+);
 
 // Returns viewport size from viewports list
 @function viewport($size) {
