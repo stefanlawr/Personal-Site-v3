@@ -5,7 +5,7 @@
 node_modules/
 .tmp/
 build/
-
+dist/
 
 # OS or Editor folders
 .DS_Store
@@ -28,3 +28,4 @@ tempCodeRunnerFile.*
 *.*-log
 shrinkwrap.yaml
 package-lock.json
+yarn.lock

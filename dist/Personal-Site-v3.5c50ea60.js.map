@@ -1,1 +1,0 @@
-{"version":3,"sources":["index.js"],"names":[],"mappings":";;;AAEA,aAFA,QAAA,qBACA,QAAA,0BACA,QAAA","file":"Personal-Site-v3.5c50ea60.js","sourceRoot":"..","sourcesContent":["import './css/__main.scss';\r\nimport './css/__utilities.scss';\r\nimport './css/__animations.scss';\r\n"]}
